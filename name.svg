@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160" role="img" aria-label="@go-lover neon">
+  <defs>
+    <linearGradient id="neon" x1="0" x2="1">
+      <stop offset="0" stop-color="#00ffd5"/>
+      <stop offset="1" stop-color="#00aaff"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="transparent"/>
+
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+        font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="800"
+        fill="none" stroke="url(#neon)" stroke-width="2.5" paint-order="stroke"
+        filter="url(#glow)">
+    @go-lover
+  </text>
+
+  <text x="50%" y="87%" text-anchor="middle" font-family="monospace" font-size="11" fill="#9aa7b2">
+    concurrency-first · tiny syntax · blazing builds
+  </text>
+</svg>
