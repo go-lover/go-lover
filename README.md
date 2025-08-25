@@ -1,15 +1,6 @@
 <div align="center">
 
-# @go-lover
----
-<pre>
-                      __                    
-   ____ _____        / /___ _   _____  _____
-  / __ `/ __ \______/ / __ \ | / / _ \/ ___/
- / /_/ / /_/ /_____/ / /_/ / |/ /  __/ /    
- \__, /\____/     /_/\____/|___/\___/_/     
-/____/                                      
-</pre>
+<img src="assets/go-lover.svg" alt="@go-lover" width="720" />
 ---
 ### Go — tiny syntax, instant builds, and goroutine-powered concurrency.
 
