@@ -10,4 +10,3 @@
 ```
 ---
 ### Go — tiny syntax, instant builds, and goroutine-powered concurrency.
-![Profile Views](https://komarev.com/ghpvc/?username=go-lover&color=blue&style=flat-square)
