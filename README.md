@@ -1,6 +1,7 @@
 <div align="center">
 
 <img src="assets/go-lover.svg" alt="@go-lover" width="720" />
+
 ---
 ### Go — tiny syntax, instant builds, and goroutine-powered concurrency.
 
