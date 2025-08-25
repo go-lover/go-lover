@@ -1,4 +1,4 @@
-# @go-lover ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+# @go-lover ![Gopher](https://raw.githubusercontent.com/egonelbre/gophers/master/.thumb/animation3.gif)
 ---
 ```
                       __                    
@@ -10,4 +10,3 @@
 ```
 ---
 ### Go — tiny syntax, instant builds, and goroutine-powered concurrency.
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=go-lover&layout=compact&theme=tokyonight)
