@@ -1,5 +1,3 @@
 <div align="center">
-
-<img src="name.svg" alt="@go-lover"/>
-
+  <img src="name.svg" width="100%" alt="@go-lover"/>
 </div>
