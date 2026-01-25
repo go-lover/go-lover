@@ -1,7 +1,6 @@
 <svg width="450" height="100" viewBox="0 0 450 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      /* --- LIGHT MODE COLORS --- */
       :root {
         --bg-start: #FFFFFF;
         --bg-end: #E6EAEF;
@@ -11,9 +10,9 @@
         --text-str: #116329;
         --tab-text: #57606A;
         --accent-color: #00ADD8;
+        --border-color: #D0D7DE; 
       }
 
-      /* --- DARK MODE OVERRIDES --- */
       @media (prefers-color-scheme: dark) {
         :root {
           --bg-start: #0D1117;
@@ -24,20 +23,10 @@
           --text-str: #56D364;
           --tab-text: #666666;
           --accent-color: #00ADD8;
+          --border-color: #30363D; 
         }
       }
 
-      /* --- ANIMATION --- */
-      .cursor {
-        animation: blink 1s step-end infinite;
-        fill: var(--accent-color);
-      }
-      @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-      }
-
-      /* --- CLASS BINDINGS --- */
       .bg-gradient-start { stop-color: var(--bg-start); }
       .bg-gradient-end   { stop-color: var(--bg-end); }
       .box-bg            { fill: url(#bgGradient); }
@@ -47,46 +36,43 @@
       .txt-op            { fill: var(--text-op); }
       .txt-str           { fill: var(--text-str); }
       .txt-tab           { fill: var(--tab-text); }
+      .border-stroke     { stroke: var(--border-color); }
     </style>
 
-    <!-- IDE Background Gradient (Uses CSS Classes now) -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" class="bg-gradient-start" stop-opacity="1" />
       <stop offset="100%" class="bg-gradient-end" stop-opacity="1" />
     </linearGradient>
 
-    <!-- Tech Grid Pattern -->
     <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
       <path d="M 20 0 L 0 0 0 20" fill="none" class="grid-path" stroke-width="0.5"/>
     </pattern>
+
+    <rect id="card-shape" x="2" y="2" width="446" height="96" rx="6" />
+    
+    <clipPath id="card-clip">
+      <use href="#card-shape" />
+    </clipPath>
   </defs>
 
-  <!-- Background Container -->
-  <rect x="2" y="2" width="446" height="96" rx="6" class="box-bg" stroke-width="1"/>
-  
-  <!-- Grid Overlay -->
-  <rect x="2" y="2" width="446" height="96" rx="6" fill="url(#grid)" opacity="0.4"/>
+  <use href="#card-shape" class="box-bg" />
 
-  <!-- Left Accent Bar (Golang Cyan) -->
-  <rect x="2" y="2" width="6" height="96" rx="2" class="accent-bar"/>
-
-  <!-- Code Snippet Group -->
-  <g transform="translate(30, 60)" font-family="Consolas, 'Courier New', monospace" font-size="28">
+  <g clip-path="url(#card-clip)">
     
-    <!-- Variable Name -->
-    <text x="0" y="0" class="txt-usr" font-weight="bold">usr</text>
+    <rect x="2" y="2" width="446" height="96" fill="url(#grid)" opacity="0.4"/>
     
-    <!-- Walrus Operator -->
-    <text x="55" y="0" class="txt-op" font-weight="bold">:=</text>
+    <rect x="0" y="0" width="10" height="100" class="accent-bar"/>
     
-    <!-- String Value -->
-    <text x="100" y="0" class="txt-str">"@go-lover"</text>
-    
-    <!-- The Cursor Block -->
-    <rect x="270" y="-22" width="12" height="28" class="cursor"/>
   </g>
 
-  <!-- Top "File Tab" Text -->
+  <use href="#card-shape" fill="none" class="border-stroke" stroke-width="2"/>
+
+  <g transform="translate(30, 60)" font-family="Consolas, 'Courier New', monospace" font-size="28">
+    <text x="0" y="0" class="txt-usr" font-weight="bold">usr</text>
+    <text x="55" y="0" class="txt-op" font-weight="bold">:=</text>
+    <text x="100" y="0" class="txt-str">"@go-lover"</text>
+  </g>
+
   <text x="30" y="25" font-family="Arial, sans-serif" font-size="10" class="txt-tab" font-weight="bold" letter-spacing="1">
     MAIN.GO
   </text>
