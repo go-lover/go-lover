@@ -17,7 +17,7 @@
         :root {
           --bg-start: #0D1117;
           --bg-end: #040507;
-          --grid-color: #333333;
+          --grid-color: #333337;
           --text-usr: #428EEE;
           --text-op: #F0F6FC;
           --text-str: #56D364;
