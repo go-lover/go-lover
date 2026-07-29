@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="675" height="675" viewBox="0 0 675 675">
   <style>
     .animated-path {
-      stroke: #ffffff;
-      fill: #ffffff;
+      stroke: #7F7F7F;
+      fill: #7F7F7F;
       stroke-width: 5px;
       fill-opacity: 0;
       stroke-dasharray: 1;
